@@ -1,0 +1,159 @@
+html{
+    background: url(images/horizon.jpg) no-repeat  center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+  height: 100% -webkit-fill-available;
+ }
+
+body { 
+   min-height: 100vh; 
+/* mobile viewport bug fix */ 
+   min-height: -webkit-fill-available;
+   height: 100%;
+   margin: 0;
+   font-family: Arial;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color:#5c0202;
+  text-align: center;
+}
+
+p {
+  color:#5c0202;
+  text-align: center;
+}
+
+p2 {
+  color:#5c0202;
+  text-align: center;
+}
+
+.nav {
+  text-decoration: none;
+}
+
+.navbutton {
+  color: #5c0202;
+  display: inline;
+  text-decoration: none;
+  justify-content: center;
+  padding-inline: 10px;
+  position: relative;
+  bottom: 15px; 
+  top: 5px;
+}
+  
+.header img { 
+display: center; 
+width: auto; 
+height: 200px;
+padding: 1rem;
+} 
+
+ .header {
+  font-family: Arial;
+  font-size: 15px;
+  text-align: center;
+}
+
+img {
+  position: center;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+
+ *{
+  box-sizing: border-box;
+}
+
+.container {
+ position: relative; 
+ top: 350px;
+
+}
+
+/*.mySlides {
+  display: none;
+}*/
+
+.cursor {
+ cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(2, 2, 2);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #F2F2F2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  display: none;
+  float: left;
+  width: 15.5%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+line {
+ padding-bottom: 5px;
+ font-size: 2rem;
+ font-family: Arial;
+ color:black;
+ 
+}
+
+.h1{
+  font-size: 2em;
+  align-content: center;
+  
+}

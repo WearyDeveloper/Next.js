@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="styles.css">
+      <header>
+        <main>
+            <div style="background-image: url ('images/horizon.jpg');">
+            <div class="header"> <img src="images/NcHorizon.png" alt="logo" /> 
+            <nav>
+              <a href="#" class="navbutton">Home</a>
+              <a href="#" class="navbutton">About</a>
+              <a href="#" class="navbutton">Products</a>
+              <a href="#" class="navbutton">Contact</a>
+            </nav>  
+               
+            <div class="line">_______________________________________</div>
+    
+          </header>
+          <body>
+
+            <h2>Welcome</h2>
+            <p>The future of urban street ware is on the the Horizon. Browse our selection of quality hand woven cotton shirts.</p>
+            <p2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, fugiat similique. Commodi itaque obcaecati explicabo laborum, voluptates eveniet minima labore quae dicta ullam necessitatibus tempore aliquam tenetur nesciunt illum. Quis?</p2>
+              
+                <div class="container">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 6</div>
+                      <img src="/Images/NC_HorizonMockUp.png" style="width: 100% ">
+                   </div>
+          
+            <div class="mySlides">          
+                <div class="numbertext">2 / 6</div>
+                  <img src="/Images/BlueShirtV2.jpg" style="width: 100%;">
+              </div>
+          
+              <div class="mySlides">          
+                <div class="numbertext">3 / 6</div>
+                  <img src="images/BlueShirt.jpg" style="width:100%">
+              </div>
+          
+            <div class="mySlides">          
+              <div class="numbertext">4 / 6</div>
+                <img src="images/NepalShirt.jpg" style="width:100%">
+            </div>
+           <div class="mySlides">         
+              <div class="numbertext">5 / 6</div>
+                  <img src="images/LionessT.jpg" style="width:100%">
+            </div>
+          <div class="mySlides">          
+              <div class="numbertext">6 / 6</div>
+                <img src="images/Lioness.jpg" style="width:100%">
+           </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">         
+              <p id="caption"></p>
+          </div>
+              <div class="row">         
+              <div class="column">
+                <img class="demo cursor" src="images/NC_HorizonMockUp.png"style="width:100%" onclick="currentSlide(1)"alt="Horizon">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/BlueShirtV2.jpg"style="width:100%" onclick="currentSlide(2)" alt="NC Blue T-shirt">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/BlueShirt.jpg"style="width:100%" onclick="currentSlide(3)" alt="NC Blue T-shirt">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/NepalShirt.jpg"White T-Shirt>
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/LionessT.jpg"style="width:100%" onclick="currentSlide(5)" alt="Lioness T-shirt">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/Lioness.jpg"style="width:100%" onclick="currentSlide(6)"alt="Lioness">
+              </div>
+            </div>
+            <script>
+             var slideIndex = 1;
+              showSlides(slideIndex);
+              function plusSlides(n) {
+                   showSlides(slideIndex += n);
+                }
+              function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+              }
+  
+  
+  
+            </script>
+        </body>
+      </main>
+    </meta>
+  </head>
+</html>
